@@ -1,0 +1,147 @@
+body {
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Outfit';
+    height: 100vh;
+    justify-content: center;
+    font-weight: 300;
+    margin: 0;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    max-width: 18rem;
+
+}
+.card-image{
+    position: relative;
+}
+.equilibrium-image {
+    display: block;
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background-color: hsl(178, 100%, 50%, 60%);
+    opacity: 0;
+}
+
+.view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+h3 {
+    color: #fff;
+    font-weight: 600;
+    margin-block-end: 5px;
+}
+
+h3:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+
+}
+
+.text {
+    color: hsl(215, 51%, 70%);
+    margin-block-start: 10px;
+    margin-block-end: 2px;
+}
+
+.icons {
+    display: flex;
+}
+
+.ETH {
+    color: hsl(178, 100%, 50%);
+    margin-block-start: 15px;
+    font-weight: 600;
+    position: relative;
+    left: 1px;
+}
+
+.ETH[data-icon=ETH-icon]::before {
+    content: url(images/icon-ethereum.svg);
+    position: relative;
+    top: 2px;
+    right: 2px;
+}
+
+.clock {
+    color: hsl(215, 51%, 70%);
+    position: relative;
+    left: 4.5rem;
+    margin-block-start: 15px;
+}
+
+.clock[data-icon=clock-icon]::before {
+    content: url(images/icon-clock.svg);
+    position: relative;
+    top: 2px;
+    right: 3px;
+}
+
+hr {
+    margin: 0;
+    border-width: 1px;
+    border-color: hsl(215, 32%, 27%);
+}
+
+.creater {
+    color: hsl(215, 51%, 70%);
+    margin-top: 0;
+    position: relative;
+    left: 10px;
+}
+
+.avatar-image {
+    width: 2rem;
+    border: solid;
+    border-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+/* attribute */
+
+.attribution p {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(228, 45%, 44%);
+    margin: 0;
+    position: relative;
+    top: 20px;
+}
